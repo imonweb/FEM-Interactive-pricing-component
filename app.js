@@ -2,7 +2,7 @@
 // ".selector", ".page-views" & ".billing-type" in variables
 const slider = document.querySelector(".slider");
 const sliderValue = document.querySelector(".slider-value");
-const sliderFilled = document.querySelector(".slider-fillled");
+const sliderFilled = document.querySelector(".slider-filled");
 const selector = document.querySelector(".selector");
 const pageViews = document.querySelector(".page-views");
 const billingType = document.querySelector(".billing-type");
@@ -47,7 +47,7 @@ slider.addEventListener('input', () => {
   const maxValue = slider.getAttribute("max");
   
   // cal percentage for filled bar & for selector button
-  const percentage = (slider.valuee / maxValue) * 100; 
+  const percentage = (slider.value / maxValue) * 100; 
   
   // set width of slider filled to current percentage
   sliderFilled.style.width = `${percentage}%`;
